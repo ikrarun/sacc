@@ -26,19 +26,19 @@ const LoginButton = () => {
           signOut();
         }}
       >
-        Go Now &#8594;
+        Log Out &#8594;
       </button>
     );
   }
   if (data === "loading") {
     return (
       <button
-        className="rounded-full duration-200 transition-all font-semibold text-xl mix-blend-screen bg-white text-black  px-4 w-fit py-1 "
+        className="rounded-full animate-pulse duration-75 transition-all font-semibold text-xl mix-blend-screen bg-white text-black  px-4 w-fit py-1 "
         onClick={(e) => {
           e.preventDefault();
         }}
       >
-        Plese wait &#8594;
+        Plese wait
       </button>
     );
   }

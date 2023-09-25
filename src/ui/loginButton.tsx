@@ -7,7 +7,7 @@ const LoginButton = () => {
   if (data === "unauthenticated") {
     return (
       <button
-        className="rounded-full duration-200 transition-all font-semibold text-xl bg-white text-black  px-4 w-fit py-1 "
+        className="rounded-full duration-200 transition-all font-semibold mix-blend-screen text-xl bg-white text-black  px-4 w-fit py-1 "
         onClick={(e) => {
           e.preventDefault();
           signIn("google");
@@ -20,7 +20,7 @@ const LoginButton = () => {
   if (data === "authenticated") {
     return (
       <button
-        className="rounded-full duration-200 transition-all font-semibold text-xl bg-white text-black  px-4 w-fit py-1 "
+        className="rounded-full duration-200 transition-all font-semibold mix-blend-screen text-xl bg-white text-black  px-4 w-fit py-1 "
         onClick={(e) => {
           e.preventDefault();
           signOut();
@@ -33,7 +33,7 @@ const LoginButton = () => {
   if (data === "loading") {
     return (
       <button
-        className="rounded-full duration-200 transition-all font-semibold text-xl bg-white text-black  px-4 w-fit py-1 "
+        className="rounded-full duration-200 transition-all font-semibold text-xl mix-blend-screen bg-white text-black  px-4 w-fit py-1 "
         onClick={(e) => {
           e.preventDefault();
         }}

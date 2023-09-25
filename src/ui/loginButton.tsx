@@ -2,7 +2,7 @@
 import { signIn, signOut, useSession } from "next-auth/react";
 import React from "react";
 
-const loginButton = () => {
+const LoginButton = () => {
   const { status: data } = useSession();
   if (data === "unauthenticated") {
     return (
@@ -44,4 +44,4 @@ const loginButton = () => {
   }
 };
 
-export default loginButton;
+export default LoginButton;

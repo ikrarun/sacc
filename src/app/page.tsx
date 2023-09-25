@@ -9,7 +9,7 @@ export default function Home() {
           Elevate Your Learning
         </h1>
         <div className="flex gap-3 font-normal flex-col text-xl sm:text-2xl sm:p-3">
-        <div className='flex h-36 transform scale-x-[-1] sm:scale-x-100 w-fit aspect-square relative'>
+        <div className='flex h-36 pointer-events-none transform scale-x-[-1] sm:scale-x-100 w-fit aspect-square relative'>
     <Image alt='' fill={true} src={hero} />
 </div>
           <h1>

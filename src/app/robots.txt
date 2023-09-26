@@ -1,0 +1,6 @@
+# Allow all user agents to access the root page
+User-agent: *
+Disallow:
+
+# Sitemap location
+Sitemap: https://c4success.vercel.app/sitemap.xml

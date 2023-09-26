@@ -1,10 +1,11 @@
 import "%/globals.css";
 import type { Metadata } from "next";
 import { Raleway as Font } from "next/font/google";
-import AuthProvider from "../utils/Auth/AuthProvider";
+import AuthProvider from "$/Auth/AuthProvider";
 import { Provider } from "$/TRPC/Provider";
+import Header from "#/header";
 
-const font = Font({ subsets: ["latin"] });
+const font = Font({ subsets: ["latin"] , weight:'400' });
 
 export const metadata: Metadata = {
   title: "C4SUCCESS",
@@ -25,9 +26,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='screen flex select-none text-white  [&>*]:max-w-[900px] [&>*]:mx-auto [&>*]:w-full bg-gradient-to-tr from-red-500 to-yellow-500 bg-fixed flex-col ' style={font.style}>
+      <body className='screen flex select-none  h-full  bg-white bg-fixed text-black flex-col ' style={font.style}>
         <Provider>
-          <AuthProvider>{children}</AuthProvider>
+          <AuthProvider>
+            <Header/>
+          <div className='max-w-[900px] flex flex-col grow h-full mx-auto w-full'>
+            {children}
+            </div>
+            </AuthProvider>
         </Provider>
       </body>
     </html>

@@ -8,6 +8,7 @@ import GoogleProvider from "next-auth/providers/google";
 import { prisma } from "&/database";
 import { Role } from "@prisma/client";
 import { GetServerSidePropsContext } from "next";
+import { NextRequest, NextResponse } from "next/server";
 
 declare module "next-auth" {
   interface Session extends DefaultSession {
@@ -48,7 +49,12 @@ export const authOptions: NextAuthOptions = {
     }),
   ],
   events: {
-    signIn: async () => {},
+    signIn: async (data) => {
+      // console.log(data)
+    },
+    signOut: async (data) => {
+  //  console.log(data)
+    },
   },
 };
 

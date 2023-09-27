@@ -39,7 +39,7 @@ export default async function Home() {
               We love <br /> to talk <br /> with you.
             </h1>
             <h1 className="text-gray-600 text-xl">
-              That's why we arrange sessions for you on every sunday.
+              That&apos;s why we arrange sessions for you on every sunday.
             </h1>
           </div>
           <div className="sm:w-full flex items-start justify-center flex-col gap-4">
